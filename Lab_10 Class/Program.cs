@@ -14,7 +14,7 @@ namespace Lab_10_Class
 {
     class Gradus
     {
-        //Присваиваем значение полям в членам классса доступ internal 
+        //Присваиваем значение полям в членам классса. По умолчанию доступ internal 
         int grad;
         int min;
         int sec;
@@ -50,7 +50,7 @@ namespace Lab_10_Class
         public double ToRadian()
         {
             double decGrad = grad + min / 60 + sec / 3600;
-            double radian = decGrad * (3.14 / 180);
+            double radian = decGrad * (Math.PI / 180);
             return radian;
         }
 
