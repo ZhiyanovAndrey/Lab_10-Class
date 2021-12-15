@@ -14,11 +14,11 @@ namespace Lab_10_Class
 {
     class Gradus
     {
-        //Присваиваем значение полям в члену классса Trans
+        //Присваиваем значение полям в членам классса доступ internal 
         int grad;
         int min;
         int sec;
-
+        // Свойства класса для полей
         public int Grad
         {
             set
@@ -46,6 +46,7 @@ namespace Lab_10_Class
             }
             get { return sec; }
         }
+       //Метод класса
         public double ToRadian()
         {
             double decGrad = grad + min / 60 + sec / 3600;
